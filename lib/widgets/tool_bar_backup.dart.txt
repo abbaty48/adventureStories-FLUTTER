@@ -1,0 +1,205 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_recoil/flutter_recoil.dart';
+import 'package:adventure_stories/commons/utils.dart';
+import 'package:adventure_stories/commons/themes.dart';
+import 'package:adventure_stories/recoils/atoms/recoil_atoms.dart';
+import 'package:adventure_stories/commons/adventure_stories_icons.dart';
+
+enum ToolBarFilterButtons {
+  homeButton,
+  backButton,
+  loginButton,
+  searchButton,
+  themeSwitchButton,
+  notificationButton,
+}
+
+Map<dynamic, dynamic> toolbarButtonOptions = {
+  Alignment: Alignment,
+  'onPressed': VoidCallbackAction()
+};
+
+class ToolBarButton extends StatelessWidget {
+  final VoidCallback? onPressed;
+  final Alignment alignment;
+  final Icon icon;
+
+  const ToolBarButton(
+      {super.key, required this.icon, required this.alignment, this.onPressed});
+
+  @override
+  Widget build(BuildContext context) {
+    return Align(
+        alignment: alignment,
+        widthFactor: 1.0,
+        // heightFactor: 1.0,
+        child: IconButton(onPressed: onPressed, icon: icon));
+  }
+}
+
+class ToolBar extends StatelessWidget {
+  final Axis axis;
+  final Color? color;
+  final EdgeInsets? padding;
+  final WrapAlignment wrapAlignment;
+  final WrapCrossAlignment crossAlignment;
+  final List<ToolBarButton> toolBarButtons;
+  final double? height, width, spacing, runSpacing;
+
+  const ToolBar({
+    super.key,
+    this.color,
+    this.height,
+    this.width,
+    this.spacing,
+    this.runSpacing,
+    this.axis = Axis.horizontal,
+    this.wrapAlignment = WrapAlignment.start,
+    this.crossAlignment = WrapCrossAlignment.start,
+    this.padding = const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
+    required this.toolBarButtons,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    // var themeState = useRecoilState(themeAtom);
+    // var isDarkMode = useRecoilState(isDarkModeAtom);
+
+    return Container(
+        color: color,
+        padding: padding,
+        height:
+            axis == Axis.vertical ? MediaQuery.of(context).size.height : height,
+        width:
+            axis == Axis.horizontal ? MediaQuery.of(context).size.width : width,
+        child: Wrap(
+            direction: Axis.horizontal,
+            alignment: WrapAlignment.center,
+            crossAxisAlignment: WrapCrossAlignment.center,
+            runAlignment: WrapAlignment.center,
+            children: [
+              ToolBarButton(
+                  icon: Icon(AdventureStories.home,
+                      color: Theme.of(context).iconTheme.color),
+                  alignment: Alignment.centerLeft),
+              ToolBarButton(
+                  icon: Icon(AdventureStories.light_down,
+                      color: Theme.of(context).iconTheme.color),
+                  alignment: Alignment.centerRight),
+            ]));
+  }
+}
+/*
+return Container(
+      color: color,
+      padding: padding,
+      height:
+          axis == Axis.vertical ? MediaQuery.of(context).size.height : height,
+      width:
+          axis == Axis.horizontal ? MediaQuery.of(context).size.width : width,
+      child: Wrap(
+        direction: Axis.horizontal,
+        spacing: spacing ?? 0.0,
+        runSpacing: runSpacing ?? 0.0,
+        // runAlignment: wrapAlignment,
+        // crossAxisAlignment: crossAlignment,
+        children: toolBarButtons,
+      ),
+    );
+ */
+
+/*
+
+    return Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Row(
+              children: [
+                IconButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, 'main_home');
+                    },
+                    icon: Icon(
+                      AdventureStories.home,
+                      color: Theme.of(context).iconTheme.color,
+                    )),
+                IconButton(
+                    onPressed: () {
+                      if (isDarkMode.data == true) {
+                        themeState.setData(LightThemeMode());
+                        isDarkMode.setData(false);
+                      } else {
+                        themeState.setData(DarkThemeMode());
+                        isDarkMode.setData(true);
+                      }
+                    },
+                    icon: Icon(
+                      AdventureStories.sun_filled,
+                      color: Theme.of(context).iconTheme.color,
+                    )),
+              ],
+            ),
+            Row(
+              children: [
+                // circular avatar here
+                loggedInUser == null
+                    ? IconButton(
+                        onPressed: () {
+                          Navigator.pushNamed(context, 'login_screen');
+                        },
+                        icon: const Icon(AdventureStories.login))
+                    : CircleAvatar(
+                        foregroundColor: Theme.of(context).primaryColor,
+                        backgroundColor: Theme.of(context)
+                            .secondaryHeaderColor
+                            .withOpacity(0.1),
+                      ),
+                IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      AdventureStories.notifications,
+                      color: Theme.of(context).iconTheme.color,
+                    )),
+                IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      AdventureStories.search,
+                      color: Theme.of(context).iconTheme.color,
+                    )),
+              ],
+            ),
+          ],
+        ));
+        */
+
+/*
+  return Container(
+        color: color,
+        padding: padding,
+        height:
+            axis == Axis.vertical ? MediaQuery.of(context).size.height : height,
+        width:
+            axis == Axis.horizontal ? MediaQuery.of(context).size.width : width,
+        child: Wrap(
+            direction: Axis.horizontal,
+            spacing: spacing ?? 0.0,
+            runSpacing: runSpacing ?? 0.0,
+            alignment: WrapAlignment.spaceBetween,
+            crossAxisAlignment: WrapCrossAlignment.start,
+            runAlignment: WrapAlignment.start,
+            // runAlignment: wrapAlignment,
+            // crossAxisAlignment: crossAlignment,
+            children: [
+              ToolBarButton(
+                  icon: Icon(AdventureStories.home,
+                      color: Theme.of(context).iconTheme.color),
+                  alignment: Alignment.centerLeft),
+              ToolBarButton(
+                  icon: Icon(AdventureStories.light_down,
+                      color: Theme.of(context).iconTheme.color),
+                  alignment: Alignment.center),
+            ]));
+            */

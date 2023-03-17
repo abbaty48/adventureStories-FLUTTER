@@ -1,0 +1,17 @@
+{
+  "iss": "https://accounts.google.com",
+  "azp": "498694504451-g3pr0fptgl0io2ajljin42a2n2h9k2qd.apps.googleusercontent.com",
+  "aud": "498694504451-g3pr0fptgl0io2ajljin42a2n2h9k2qd.apps.googleusercontent.com",
+  "sub": "116459527113112845027",
+  "email": "abdurrahmansalah619@gmail.com",
+  "email_verified": true,
+  "at_hash": "xb4tOhAv4KflMF_0WpgM-Q",
+  "nonce": "g_FQwY0paIbZdgoXMhpb8A",
+  "name": "Saleh Abdurrahman",
+  "picture": "https://lh3.googleusercontent.com/a/ALm5wu2-HbjVYvQP12-YOCBz9kQZCseK90tdjBTVcfRI=s96-c",
+  "given_name": "Saleh",
+  "family_name": "Abdurrahman",
+  "locale": "en",
+  "iat": 1664126028,
+  "exp": 1664129628
+}

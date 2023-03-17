@@ -1,0 +1,24 @@
+[
+  {
+    "_id": "054ccd4d-49e6-4600-ba3f-e4d7ea993232",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/graphql",
+    "url": "http://localhost:3000/graphql",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-03-17T10:05:42.167Z",
+    "modified": "2023-03-17T10:05:42.167Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "graphql",
+      "raw": "",
+      "form": [],
+      "graphql": {
+        "query": "query Events {\r\n              events {\r\n                name\r\n            }\r\n          }"
+      }
+    },
+    "tests": []
+  }
+]

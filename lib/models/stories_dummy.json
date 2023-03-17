@@ -1,0 +1,114 @@
+[
+   {
+      "title": "2 day hike in the Rockies",
+      "difficulty": "Low",
+      "duration": " 2 Day",
+      "kind": "group",
+      "event": "hiking",
+      "likes": "901",
+      "image": "images/stories/hiking.png",
+      "comments": [],
+      "stories": [
+         {
+            "caption": "Hiking three family-fiendly trails",
+            "description": "Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo. Luctus arcu, urna praesent at id quisque ac. Arcu es massa vestibulum malesuada, integer vivamus elit eu mauris eus, cum eros quis aliquam wisi. Nulla wisi laoreet suspendisse integer vivamus elit eu mauris hendrerit facilisi, mi mattis pariatur aliquam pharetra eget.",
+            "images": [
+               "",
+               ""
+            ]
+         },
+         {
+            "caption": "Meals and camping included",
+            "description": "Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo. Luctus arcu, urna praesent at id quisque ac. Arcu es massa vestibulum malesuada, integer vivamus elit eu mauris eus, cum eros quis aliquam wisi.",
+            "images": [
+               "",
+               ""
+            ]
+         }
+      ]
+   },
+   {
+      "title": "Australian surf safari",
+      "difficulty": "Medium",
+      "duration": "1 Day",
+      "kind": "single",
+      "event": "surfing",
+      "likes": 89,
+      "image": "images/stories/surfing.png",
+      "comments": [],
+      "stories": [
+         {
+            "caption": "A day at our favorite beach never fails",
+            "description": " Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo. Luctus arcu, urna praesent at id quisque ac. Arcu es massa vestibulum malesuada, integer vivamus elit eu mauris eus, cum eros quis aliquam wisi. Nulla wisi laoreet suspendisse integer vivamus elit eu mauris hendrerit facilisi, mi mattis pariatur aliquam pharetra eget.",
+            "images": [
+               "",
+               ""
+            ]
+         },
+         {
+            "caption": "Watch out for jellyfish",
+            "description": "Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo. Luctus arcu, urna praesent at id quisque ac. Arcu es massa vestibulum malesuada, integer vivamus elit eu mauris eus, cum eros quis aliquam wisi.",
+            "images": [
+               "",
+               ""
+            ]
+         }
+      ]
+   },
+   {
+      "title": "Free climbing at Siurana",
+      "difficulty": "High",
+      "duration": "1 Day",
+      "kind": "group",
+      "event": "climbing",
+      "likes": 99,
+      "image": "images/stories/climbing.png",
+      "comments": [],
+      "stories": [
+         {
+            "caption": "We're going where we don't need ropes",
+            "description": "Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo. Luctus arcu, urna praesent at id quisque ac. Arcu es massa vestibulum malesuada, integer vivamus elit eu mauris eus, cum eros quis aliquam wisi. Nulla wisi laoreet suspendisse integer vivamus elit eu mauris hendrerit facilisi, mi mattis pariatur aliquam pharetra eget.",
+            "images": [
+               "",
+               ""
+            ]
+         },
+         {
+            "caption": "Climb with our experienced guide",
+            "description": "Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo. Luctus arcu, urna praesent at id quisque ac. Arcu es massa vestibulum malesuada, integer vivamus elit eu mauris eus, cum eros quis aliquam wisi.",
+            "images": [
+               "",
+               ""
+            ]
+         }
+      ]
+   },
+   {
+      "title": "The French Alps by air",
+      "difficulty": "High",
+      "duration": "1/2 Day",
+      "kind": "single",
+      "event": "skydiving",
+      "likes": 99,
+      "image": "images/stories/skydiving.png",
+      "comments": [],
+      "stories": [
+         {
+            "caption": "Up, up and away!",
+            "description": "Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo. Luctus arcu, urna praesent at id quisque ac. Arcu es massa vestibulum malesuada, integer vivamus elit eu mauris eus, cum eros quis aliquam wisi. Nulla wisi laoreet suspendisse integer vivamus elit eu mauris hendrerit facilisi, mi mattis pariatur aliquam pharetra eget.",
+            "images": [
+               "",
+               ""
+            ]
+         },
+         {
+            "caption": "Your skydive, filmed",
+            "description": "Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo. Luctus arcu, urna praesent at id quisque ac. Arcu es massa vestibulum malesuada, integer vivamus elit eu mauris eus, cum eros quis aliquam wisi.",
+            "images": [
+               "",
+               ""
+            ]
+         }
+      ]
+   }
+]
